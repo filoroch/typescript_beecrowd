@@ -11,28 +11,3 @@ var lines = input.split('\n');
  * e. a area do retangulo com lados A e B;
  */
 
-const PI = 3.14159;
-
-function Area(A, B, C){
-    A = parseFloat(A);
-    B = parseFloat(B);
-    C = parseFloat (C);
-
-    console.log(`TRIANGULO: ${RETANGLED_TRIANGLE(A,C).toFixed(3)}`);
-    console.log(`CIRCULO: ${RADIUS_CIRCLE(C).toFixed(3)}`);
-    console.log(`TRAPEZIO: ${TRAPEZIUM(B,A,C).toFixed(3)}`);
-    console.log(`QUADRADO: ${SQUARE(B).toFixed(3)}`);
-    console.log(`RETANGULO: ${RECTANGLE(A,B).toFixed(3)}`);
-};
-
-const RETANGLED_TRIANGLE = (A,C) => {return (A*C)/2};
-const RADIUS_CIRCLE = (C) => {return (Math.pow(C, 2)*PI)};
-const TRAPEZIUM = (B, b, h) => {return (B+b)*h/2};
-const SQUARE = (B) => {return Math.pow(B,2)};
-const RECTANGLE = (A, B) => {return (A*B)};
-
-// Lendo os valores de entrada corretamente
-const [A, B, C] = lines[0].split(' ').map(parseFloat);
-
-// Chamando a função principal
-Area(A, B, C);

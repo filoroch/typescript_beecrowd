@@ -6,8 +6,3 @@ var lines = input.split('\n');
  * A formula para calcular o volume é:
  * (4/3) * PI(3.14159) * R^3 (elevado a três)
  */
-
-const PI = Math.PI.toFixed(5);
-const SPHERE = (raio) => {return (4.0/3) * PI * (raio = Math.pow(raio, 3))} 
-
-console.log('VOLUME = '+ SPHERE(input).toFixed(3));
