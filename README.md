@@ -1,1 +1,1 @@
-# typescript_beecrowd
+# Testando conhecimento de Typescript com beecrowd
